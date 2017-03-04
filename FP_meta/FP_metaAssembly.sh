@@ -24,6 +24,7 @@ eval $(grep "^min_contig_lgth=" FP_config.cfg)
 eval $(grep "^read_trkg=" FP_config.cfg)
 eval $(grep "^amos_file=" FP_config.cfg)
 eval $(grep "^velvet_path=" FP_config.cfg)
+eval $(grep "^metavelvet_path=" FP_config.cfg)
 eval $(grep "^kmer_start=" FP_config.cfg)
 eval $(grep "^kmer_end=" FP_config.cfg)
 eval $(grep "^kmer_interval=" FP_config.cfg)
@@ -100,4 +101,4 @@ for i in `ls -d $sample"/assembly/"$sample"_"*`
                 ./AssemblyStat.sh $i"/contigs.fa" > $i"/"$kmer_dir"_Stat_velvet.txt"
                 ./AssemblyStat.sh $i"/meta-velvetg.contigs.fa" > $i"/"$kmer_dir"_Stat_metavelvet.txt"
 done
-
+done
