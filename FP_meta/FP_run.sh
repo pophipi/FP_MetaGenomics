@@ -26,4 +26,4 @@
 ./FP_metaFilter.sh
 ./FP_metaAssembly.sh
 ./FP_metaWEVOTE.sh
-
+./FP_metaGenes.sh
