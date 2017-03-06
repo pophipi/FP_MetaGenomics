@@ -40,9 +40,9 @@ do
         mkdir $tax_wd
 
 
-	$WEVOTE/run_WEVOTE_PIPELINE.sh -i $AnalysisFolder/meta-velvetg.contigs.fa -o $sample"/blast/"$dir"/"$dir --db $WEVOTE_DB --blastn --threads 16 -a 0
+	$WEVOTE/run_WEVOTE_PIPELINE.sh -i $AnalysisFolder/meta-velvetg.contigs.fa -o $wevote_wd --db $WEVOTE_DB --kraken --clark --blastn --threads 16 -a 0
 
-	$WEVOTE/run_ABUNDANCE.sh -i $wevote_wd/$dir"_WEVOTE_Details.txt" -p $wevote_wd/$dir"_WEVOTE" --db $WEVOTE_DB --seqcount $sample"/assembly/"$dir"/"$dir"_ReadsPerContigSorted.txt"
+	$WEVOTE/run_ABUNDANCE.sh -i $wevote_wd"/"$dir"_WEVOTE_Details.txt" -p $tax_wd"/"$dir"_WEVOTE" --db $WEVOTE_DB --seqcount $sample"/assembly/"$dir"/"$dir"_ReadsPerContigSorted.txt"
 
 done
 
