@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #PBS -l nodes=1:ppn=16
-#PBS -l walltime=10:00:00
+#PBS -l walltime=3:00:00:00
 #PBS -d ./
 #PBS -m abe
 #PBS -M ametwa2@uic.edu
@@ -21,9 +21,12 @@
 ###******************************************************************###
 
 
+############### Collecting the Options ###############
+# To submit a job, just write the command in the following way:
+# qsub -v sample=...... FP_run.sh
 
-
-./FP_metaFilter.sh
-./FP_metaAssembly.sh
-./FP_metaWEVOTE.sh
-./FP_metaGenes.sh
+#sample=$1
+#./FP_metaFilter.sh $sample
+./FP_metaAssembly.sh $sample
+./FP_metaWEVOTE.sh $sample
+#./FP_metaGenes.sh $sample

@@ -19,7 +19,7 @@ eval $(grep "^MetaGMark=" FP_config.cfg)
 
 
 #for sample in `ls -d *_S14`
-for sample in `cat sample`
+for sample in `cat $1`
 do
 
 for AnalysisFolder in `ls -d $sample"/assembly/"$sample"_"*`
