@@ -1,11 +1,11 @@
 #!/bin/bash
 
 #PBS -l nodes=1:ppn=16
-#PBS -l walltime=3:00:00:00
+#PBS -l walltime=1:00:00:00
 #PBS -d ./
 #PBS -m abe
 #PBS -M ametwa2@uic.edu
-#PBS -N Test_modular
+#PBS -N $sample
 
 
 ###******************************************************************###
@@ -27,6 +27,6 @@
 
 #sample=$1
 #./FP_metaFilter.sh $sample
-./FP_metaAssembly.sh $sample
+#./FP_metaAssembly.sh $sample
 ./FP_metaWEVOTE.sh $sample
 #./FP_metaGenes.sh $sample
