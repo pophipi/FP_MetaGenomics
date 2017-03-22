@@ -2,28 +2,18 @@
 
 
 
+### Collect files from different samples within multiple runs to one folder
+for i in `ls 1*/MK*_S*/taxonomy/*_59/*Abundance*.csv`; do cp $i UCLA_collectedFiles/; done
 
-#ls -d $sample"/blast/"$sample"_"*
 
-for sample in `ls AbundanceFiles/`
+### Collect Abundance files from different samples within the same run
+for sample in `cat sample`
 do
-	echo "Folder= " $sample
-	temp=`ls "AbundanceFiles/"$sample"/"*"VEGAN_Abundance.csv"`
-	echo $temp
-	cp $temp "AbundanceFiles/"$sample"_WEVOTE_Abundance.csv"
+	for AnalysisFolder in `ls -d $sample"/taxonomy/"$sample"_"*`
+	do
+		dir=`basename $AnalysisFolder`
+        	wd=$sample"/taxonomy/"$dir	
+		#echo $AnalysisFolder
+		cp -r $wd/ AbundanceFiles/
+	done
 done
-
-
-
-
-#for sample in `cat sample`
-#do
-#
-#	for AnalysisFolder in `ls -d $sample"/taxonomy/"$sample"_"*`
-#	do
-#		dir=`basename $AnalysisFolder`
-#        	wd=$sample"/taxonomy/"$dir	
-#		#echo $AnalysisFolder
-#		cp -r $wd/ AbundanceFiles/
-#	done
-#done
