@@ -74,7 +74,7 @@ Run=$(echo $directory | awk -F _ '{ print $3 }')
 		if [ ! -d "$y" ]; then
 			mkdir $y
 			mkdir $y/assembly
-			mkdir $y/blast
+			#mkdir $y/blast
 			mkdir $y/wevote
 			mkdir $y/taxonomy
 			mkdir $y/genepredict
@@ -87,7 +87,7 @@ Run=$(echo $directory | awk -F _ '{ print $3 }')
 
 
 ### Create samples
-for i in `ls -d *_S*`; do echo $i > "sample_"$i; done
+#for i in `ls -d *_S*`; do echo $i > "sample_"$i; done
 
 
 

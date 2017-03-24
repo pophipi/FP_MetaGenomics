@@ -25,8 +25,8 @@
 # To submit a job, just write the command in the following way:
 # qsub -v sample=...... FP_run.sh
 
-#sample=$1
+./FP_metaProcess.sh
 #./FP_metaFilter.sh $sample
 #./FP_metaAssembly.sh $sample
-./FP_metaWEVOTE.sh $sample
+#./FP_metaWEVOTE.sh $sample
 #./FP_metaGenes.sh $sample
