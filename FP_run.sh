@@ -25,6 +25,10 @@
 # To submit a job, just write the command in the following way:
 # qsub -v sample=...... FP_run.sh
 
+# To run all the steps after processing within the run's directory:
+#for i in `ls sample_*`; do qsub -v sample=$i FP_run.sh; done
+
+
 ./FP_metaProcess.sh
 #./FP_metaFilter.sh $sample
 #./FP_metaAssembly.sh $sample
