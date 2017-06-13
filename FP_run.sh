@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #PBS -l nodes=1:ppn=16
-#PBS -l walltime=1:00:00:00
+#PBS -l walltime=00:03:00:00
 #PBS -d ./
 #PBS -m abe
-#PBS -M ametwa2@uic.edu
+#PBS -M khuang49@uic.edu
 #PBS -N $sample
 
 
@@ -29,8 +29,8 @@
 #for i in `ls sample_*`; do qsub -v sample=$i FP_run.sh; done
 
 
-./FP_metaProcess.sh
-#./FP_metaFilter.sh $sample
-#./FP_metaAssembly.sh $sample
-#./FP_metaWEVOTE.sh $sample
-#./FP_metaGenes.sh $sample
+FP_metaProcess.sh
+#FP_metaFilter.sh $sample
+#FP_metaAssembly.sh $sample
+#FP_metaWEVOTE.sh $sample
+#FP_metaGenes.sh $sample
