@@ -6,7 +6,7 @@
 #PBS -m abe
 #PBS -M khuang49@uic.edu
 #PBS -N $sample
-
+#PBS -V
 
 ###******************************************************************###
 ###********              Metagenomics Pipeline               ********###
