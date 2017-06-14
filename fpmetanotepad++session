@@ -1,0 +1,19 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="9">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="4728" startPos="11" endPos="11" selMode="0" lang="Shell" encoding="-1" filename="C:\Users\kaihu\OneDrive\Documents\GitHub\FP_MetaGenomics\FP_run.sh" backupFilePath="" originalFileLastModifTimestamp="1496763465" />
+            <File firstVisibleLine="12" xOffset="0" scrollWidth="4728" startPos="1502" endPos="1499" selMode="0" lang="Shell" encoding="-1" filename="C:\Users\kaihu\OneDrive\Documents\GitHub\FP_MetaGenomics\FP_metaProcess.sh" backupFilePath="" originalFileLastModifTimestamp="1496763465" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="4728" startPos="855" endPos="855" selMode="0" lang="Shell" encoding="-1" filename="C:\Users\kaihu\OneDrive\Documents\GitHub\FP_MetaGenomics\FP_metaFilter.sh" backupFilePath="" originalFileLastModifTimestamp="1496763465" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="4728" startPos="1229" endPos="1232" selMode="0" lang="Shell" encoding="-1" filename="C:\Users\kaihu\OneDrive\Documents\GitHub\FP_MetaGenomics\FP_metaAssembly.sh" backupFilePath="" originalFileLastModifTimestamp="1496763465" />
+            <File firstVisibleLine="5" xOffset="0" scrollWidth="4728" startPos="1200" endPos="1200" selMode="0" lang="Shell" encoding="-1" filename="C:\Users\kaihu\OneDrive\Documents\GitHub\FP_MetaGenomics\FP_metaWEVOTE.sh" backupFilePath="" originalFileLastModifTimestamp="1496763465" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="4728" startPos="999" endPos="999" selMode="0" lang="Shell" encoding="-1" filename="C:\Users\kaihu\OneDrive\Documents\GitHub\FP_MetaGenomics\FP_metaGenes.sh" backupFilePath="" originalFileLastModifTimestamp="1496763465" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="4728" startPos="0" endPos="0" selMode="0" lang="Shell" encoding="-1" filename="C:\Users\kaihu\OneDrive\Documents\GitHub\FP_MetaGenomics\AssemblyStat.sh" backupFilePath="" originalFileLastModifTimestamp="1496763465" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="4728" startPos="0" endPos="0" selMode="0" lang="Shell" encoding="-1" filename="C:\Users\kaihu\OneDrive\Documents\GitHub\FP_MetaGenomics\FP_getAbudanceFiles.sh" backupFilePath="" originalFileLastModifTimestamp="1496763465" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="4728" startPos="497" endPos="0" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Users\kaihu\OneDrive\Documents\GitHub\FP_MetaGenomics\wevote.cfg" backupFilePath="" originalFileLastModifTimestamp="1496763465" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="5352" startPos="1284" endPos="1284" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Users\kaihu\OneDrive\Documents\GitHub\FP_MetaGenomics\MOCAT.cfg" backupFilePath="" originalFileLastModifTimestamp="1496763465" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="4728" startPos="414" endPos="414" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Users\kaihu\OneDrive\Documents\GitHub\FP_MetaGenomics\FP_config.cfg" backupFilePath="" originalFileLastModifTimestamp="1496763465" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="5352" startPos="546" endPos="546" selMode="0" lang="C++" encoding="-1" filename="C:\Users\kaihu\Google Drive\Finn-Perkins Lab\WEVOTE Sandbox\WEVOTE\src\WEVOTE.cpp" backupFilePath="" originalFileLastModifTimestamp="1494778214" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>
