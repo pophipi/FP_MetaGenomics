@@ -37,7 +37,7 @@ echo -e "\nData screening executed in= "$DIFF" min" >> Run_"$Run"_log
 #       the paired end after screening. It is necessary to run the next profiling step
 START=$(date +%s)
 echo -e "\nFilteration command: \n MOCAT.pl -sf sample -f hg19" >> Run_"$Run"_log
-$MOCAT.pl -sf $sample -f hg19
+MOCAT.pl -sf $sample -f hg19
 END=$(date +%s)
 DIFF=`expr $(($END - $START)) / 60`
 echo -e "\nData filteration executed in= "$DIFF" min" >> Run_"$Run"_log
