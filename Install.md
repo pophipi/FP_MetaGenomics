@@ -91,9 +91,56 @@ metaphlanPath="/export/home/<your-net-id>/WEVOTE_PACKAGE/metaphlan"
 ```
 
 ## Running the FP-Metagenomics-Pipeline
+Currently, running the FP Pipeline requires two seperate steps. First, you will run the processing script on all available samples then the rest of the pipeline scripts. You will need to comment out the parts of the script that you do not want to run. 
+
+Running processing only: Comment out everything except FP_metaprocess.sh. First, open FP_run.sh.
+```
+cd ~/FP_meta_PACKAGE/FP_MetaGenomics
+vim FP_run.sh
+```
+
+Check that all lines in FP_run.sh starting with "FP" except FP_metaProcess.sh are commented out (have a # in front)
+```
+FP_metaProcess.sh
+#FP_metaFilter.sh $sample
+#FP_metaAssembly.sh $sample
+#FP_metaWEVOTE.sh $sample
+#FP_metaGenes.sh $sample
+```
+
+Save and quit from the vim editor. cd to the folder containing your compressed .fastq.gz files (each sample should be paired with a R1 and R2 file.
+```
+cd <location of your fastq files>
+```
+
+Run the processing pipeline script.
+```
+qsub FP_run.sh
+```
+
+After successful processing, your sample folder should now contain individual folders named for each paired sample processed. These folders contain the required inputs for the rest of the pipeline. Now you can uncomment the other pipeline steps in FP_run.sh.
+```
+cd ~/FP_meta_PACKAGE/FP_MetaGenomics
+vim FP_run.sh
+```
+
+Edit the file so the lines starting wtih "F" except FP_metaProcess.sh are NOT commented out.
+```
+#FP_metaProcess.sh
+FP_metaFilter.sh $sample
+FP_metaAssembly.sh $sample
+FP_metaWEVOTE.sh $sample
+FP_metaGenes.sh $sample
+```
+
+Save and quit. Change directories back to the directory containing your samples.
+```
+cd <location of processed fastq samples>
+```
+
 To submit a job, just write the command in the following way:
 ```
-qsub -v sample=...... FP_run.sh
+qsub -v sample=<name of sample you would like to run> FP_run.sh
 ```
 
 To run all the steps after processing within the run's directory:
