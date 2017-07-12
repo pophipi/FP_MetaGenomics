@@ -143,15 +143,17 @@ To submit a job, just write the command in the following way:
 qsub -v sample=<name of sample you would like to run> FP_run.sh
 ```
 
-To run all the steps after processing within the run's directory:
+To run all the steps after processing within the run's directory, you can use the following line to find all sample folders with the same prefix and submit a seperate job for each:
 ```
-for i in `ls sample_*`; do qsub -v sample=$i FP_run.sh; done
+for i in `ls <sample name prefix>*`; do qsub -v sample=$i FP_run.sh; done
 ```
 
 #### Example:
+If you have a set of sample folders all starting with "UICSarc" the command to run all of them through the pipeline would be:
 ```
-???
+for i in `ls UICSarc*`; do qsub -v sample=$i FP_run.sh; done
 ```
 
-#### Output Format?
+#### Output Format
+All pipeline outputs are saved in seperate folders within each sample folder.
 
