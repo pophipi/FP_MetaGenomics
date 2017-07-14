@@ -115,7 +115,7 @@ cd <location of your fastq files>
 
 Run the processing pipeline script.
 ```
-qsub FP_run.sh
+qsub ~/FP_meta_PACKAGE/FP_MetaGenomics/FP_run.sh
 ```
 
 After successful processing, your sample folder should now contain individual folders named for each paired sample processed. These folders contain the required inputs for the rest of the pipeline. Now you can uncomment the other pipeline steps in FP_run.sh.
@@ -140,18 +140,18 @@ cd <location of processed fastq samples>
 
 To submit a job, just write the command in the following way:
 ```
-qsub -v sample=<name of sample you would like to run> FP_run.sh
+qsub -v sample=<name of sample you would like to run> ~/FP_meta_PACKAGE/FP_MetaGenomics/FP_run.sh
 ```
 
 To run all the steps after processing within the run's directory, you can use the following line to find all sample folders with the same prefix and submit a seperate job for each:
 ```
-for i in `ls <sample name prefix>*`; do qsub -v sample=$i FP_run.sh; done
+for i in `ls <sample name prefix>*`; do qsub -v sample=$i ~/FP_meta_PACKAGE/FP_MetaGenomics/FP_run.sh; done
 ```
 
 #### Example:
 If you have a set of sample folders all starting with "UICSarc" the command to run all of them through the pipeline would be:
 ```
-for i in `ls UICSarc*`; do qsub -v sample=$i FP_run.sh; done
+for i in `ls UICSarc*`; do qsub -v sample=$i ~/FP_meta_PACKAGE/FP_MetaGenomics/FP_run.sh; done
 ```
 
 #### Output Format
